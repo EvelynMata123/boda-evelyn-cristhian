@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evelyn & Cristhian</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- REPRODUCTOR DE MÚSICA -->
+    <audio id="musicaFondo" loop>
+        <!-- OJO: Asegúrate de tener una canción en formato mp3 en tu carpeta -->
+         <source src="musica/cancion.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <button id="btnMusica" class="btn-flotante">
+        🎵 Reproducir Música
+    </button>
+
+    <!-- PORTADA TIPO PERIODICO -->
+    <section class="portada">
+
+        <div class="fecha-edicion">
+            EDICIÓN ESPECIAL • NOVIEMBRE 2026
+        </div>
+
+        <div class="nombre-periodico">
+
+            THE WEDDING TIMES
+
+        </div>
+
+        <div class="linea"></div>
+
+
+        <h2>NOTICIA PRINCIPAL</h2>
+
+
+        <h1>
+            Evelyn
+            <span>&</span>
+            Cristhian
+        </h1>
+
+
+        <p class="fecha">
+            13 de Noviembre de 2026
+        </p>
+
+
+        <p class="titular">
+            "Hay historias que nacen por casualidad
+            y terminan convirtiéndose en el lugar
+            al que siempre quieres volver."
+        </p>
+
+
+        <button id="verInvitacion">
+            Leer edición especial
+        </button>
+
+    </section>
+
+
+    <!-- NUESTRA HISTORIA -->
+
+    <section class="noticia">
+
+        <h2>NUESTRA HISTORIA</h2>
+
+        <div class="contenido">
+
+            <img src="images/DSC03141.jpg">
+
+            <p>
+            Una historia escrita con amor,
+            momentos compartidos y sueños
+            que hoy nos llevan a comenzar
+            una nueva etapa juntos.
+            </p>
+
+        </div>
+
+    </section>
+
+<!-- GALERÍA DE FOTOS -->
+    <section class="evento">
+        <h2>NUESTROS MOMENTOS</h2>
+        <div class="galeria">
+            <!-- Aquí irán sus fotos reales. Por ahora usa estas de prueba o pon las tuyas -->
+            <img src="images/DSC03160.jpg" alt="Evelyn y Cristhian">
+            <img src="images/58.jpg" alt="Evelyn y Cristhian">
+            <img src="images/8.jpg" alt="Evelyn y Cristhian">
+        </div>
+    </section>
+
+    <!-- ITINERARIO -->
+    <section class="evento itinerario">
+        <h2>ITINERARIO</h2>
+        <div class="linea-tiempo">
+            <div class="paso">
+                <h3>18:30 hrs</h3>
+                <p>⛪ Ceremonia Religiosa</p>
+            </div>
+            <div class="paso">
+                <h3>20:00 hrs</h3>
+                <p>📸 Sesión de Fotos y Traslado</p>
+            </div>
+            <div class="paso">
+                <h3>21:00 hrs</h3>
+                <p>🥂 Recepción de Invitados</p>
+            </div>
+            <div class="paso">
+                <h3>22:00 hrs</h3>
+                <p>🍽️ Gran Cena</p>
+            </div>
+            <div class="paso">
+                <h3>23:00 hrs</h3>
+                <p>💃 ¡A Bailar!</p>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- FECHA DEL EVENTO -->
+    <section class="evento">
+        <h2>ÚLTIMA HORA</h2>
+        <h3>13 DE NOVIEMBRE DE 2026</h3>
+        <p>El día elegido para celebrar nuestro amor.</p>
+
+        <!-- CONTADOR DE TIEMPO -->
+        <div id="cuenta-regresiva" class="contador">
+            <div><span id="dias">00</span><p>Días</p></div>
+            <div><span id="horas">00</span><p>Horas</p></div>
+            <div><span id="minutos">00</span><p>Minutos</p></div>
+            <div><span id="segundos">00</span><p>Segundos</p></div>
+        </div>
+    </section>
+
+
+
+    <!-- CEREMONIA -->
+
+    <section class="evento">
+
+        <div class="icono-elegante">
+            <i class="fa-solid fa-church"></i>
+             </div> <!-- ¡ESTE CIERRE ES VITAL! -->
+
+        <h2>CEREMONIA RELIGIOSA</h2>
+
+        <h3>
+            Santuario de Nuestra Señora de Guadalupe
+        </h3>
+
+        <p>
+            18:30 hrs
+        </p>
+
+        <a href="https://maps.app.goo.gl/dfqzd4hKA5KYH7Mz6">
+            Ver ubicación
+        </a>
+
+    </section>
+
+
+
+    <!-- RECEPCION -->
+
+    <section class="evento">
+        <div class="icono-elegante">
+            <i class="fa-solid fa-champagne-glasses"></i>
+             </div> <!-- ¡ESTE CIERRE ES VITAL! -->
+
+        <h2>GRAN CELEBRACIÓN</h2>
+
+        <h3>
+            Terraza para Eventos Los Carrizos
+        </h3>
+
+        <p>
+            21:00 hrs
+        </p>
+
+        <a href="https://maps.app.goo.gl/eRrsAcZ1NUuqPUbQ6">
+            Ver ubicación
+        </a>
+
+    </section>
+
+
+
+    <!-- DRESS CODE -->
+    <section class="evento">
+        <div class="icono-elegante">
+            <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <h2>CÓDIGO DE VESTIMENTA</h2>
+        <p>Formal</p>
+    </section>
+
+
+
+    <!-- REGALOS -->
+
+    <section class="evento">
+        <div class="icono-elegante">
+            <i class="fa-solid fa-gift"></i>
+             </div> <!-- ¡ESTE CIERRE ES VITAL! -->
+
+        <h2>MESA DE REGALOS</h2>
+
+        <p>
+            Liverpool
+        </p>
+
+        <h3>
+            51859532
+        </h3>
+
+        <p>
+            También recibiremos regalos físicos
+            y lluvia de sobres.
+        </p>
+
+    </section>
+
+
+
+    <!-- FOTOS -->
+
+    <section class="evento">
+
+        <h2>COMPARTE TUS FOTOS</h2>
+
+        <img src="images/qr.png"
+        class="qr">
+
+        <p>
+            Comparte los mejores momentos
+            de este día especial.
+        </p>
+
+    </section>
+
+
+
+    <!-- CONFIRMACIÓN DE ASISTENCIA -->
+    <section class="evento">
+        <div class="icono-elegante">
+            <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <h2>CONFIRMA TU ASISTENCIA</h2>
+        <p>Nos haría muy felices contar con tu presencia.</p>
+        
+        <!-- ENLACE DE WHATSAPP -->
+        <!-- OJO: Cambia el "523300000000" por tu número real con código de país (52 para México) -->
+        <a href="https://wa.me/523321999264?text=¡Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20boda%20de%20Evelyn%20y%20Cristhian.%20✨" class="btn-whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Confirmar por WhatsApp
+        </a>
+        
+        <p>
+            Fecha límite: 24 de octubre
+        </p>
+
+    </section>
+
+
+
+    <footer>
+
+        Evelyn & Cristhian
+
+        <br>
+
+        Gracias por acompañarnos
+
+    </footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

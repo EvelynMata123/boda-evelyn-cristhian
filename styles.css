@@ -1,0 +1,679 @@
+/* =========================
+   EDICIÓN ESPECIAL
+   EVELYN & CRISTHIAN
+========================= */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+
+:root{
+
+    --azul:#10233F;
+    --naranja:#B85C2A;
+    --crema:#F4EBDD;
+    --dorado:#C7A05A;
+    --texto:#222;
+
+}
+
+
+
+/* RESET */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    background:
+    radial-gradient(
+        rgba(0,0,0,.05) 1px,
+        transparent 1px
+    );
+
+    background-size:8px 8px;
+
+    background-color:var(--crema);
+
+    color:var(--texto);
+
+    font-family:'Cormorant Garamond', serif;
+
+}
+
+
+
+/* =========================
+ PORTADA PERIODICO
+========================= */
+
+
+.portada{
+
+
+    min-height:100vh;
+
+    background:
+
+    linear-gradient(
+        rgba(16,35,63,.75),
+        rgba(16,35,63,.75)
+    ),
+
+    url(images/DSC03080.jpg);
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+
+}
+
+
+
+.fecha-edicion{
+
+
+    letter-spacing:5px;
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.linea{
+
+
+    width:70%;
+
+    height:1px;
+
+    background:var(--dorado);
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.portada h2{
+
+
+    font-size:28px;
+
+    letter-spacing:8px;
+
+    font-weight:400;
+
+
+}
+
+
+
+.portada h1{
+
+
+    font-family:'Playfair Display',serif;
+
+    font-size:90px;
+
+    margin:25px 0;
+
+
+}
+
+
+
+.portada span{
+
+
+    color:var(--naranja);
+
+
+}
+
+
+
+.fecha{
+
+
+    font-size:35px;
+
+    color:#F6D99B;
+
+}
+
+
+
+.titular{
+
+
+    max-width:700px;
+
+    font-size:26px;
+
+    font-style:italic;
+
+    margin:40px 0;
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+button{
+
+
+    background:var(--naranja);
+
+    color:white;
+
+    border:none;
+
+    padding:16px 45px;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+
+}
+
+
+
+button:hover{
+
+
+    background:var(--dorado);
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+/* =========================
+ SECCIONES DE NOTICIA
+========================= */
+
+
+.noticia,
+.evento{
+
+
+    min-height:60vh;
+
+    padding:70px 10%;
+
+    text-align:center;
+
+    background:#fff;
+
+
+}
+
+
+
+.noticia h2,
+.evento h2{
+
+
+    font-family:'Playfair Display',serif;
+
+    color:var(--azul);
+
+    font-size:45px;
+
+    letter-spacing:4px;
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+.contenido{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.contenido img{
+
+
+    width:350px;
+
+    border-radius:5px;
+
+
+}
+
+
+
+.contenido p{
+
+
+    max-width:400px;
+
+    font-size:25px;
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+.evento{
+
+
+    background:var(--crema);
+
+    border-top:2px solid var(--dorado);
+
+
+}
+
+
+
+.evento h3{
+
+
+    font-size:35px;
+
+    color:var(--naranja);
+
+    margin:20px;
+
+
+}
+
+
+
+.evento p{
+
+
+    font-size:25px;
+
+    margin:15px;
+
+
+}
+
+
+
+.evento a{
+
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 30px;
+
+    background:var(--azul);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+
+}
+
+
+
+.qr{
+
+
+    width:220px;
+
+    margin:30px;
+
+
+}
+
+
+
+/* PIE */
+
+footer{
+
+
+    background:var(--azul);
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px;
+
+    font-size:30px;
+
+
+}
+
+.nombre-periodico{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:45px;
+
+    letter-spacing:10px;
+
+    color:#F6D99B;
+
+    margin-bottom:20px;
+
+}
+
+/* =========================
+ CONTADOR DE TIEMPO
+========================= */
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contador div {
+    background: var(--azul);
+    color: var(--crema);
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 90px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contador span {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.contador p {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    color: var(--dorado);
+}
+
+/* =========================
+ GALERÍA DE FOTOS
+========================= */
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.galeria img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover; /* Esto evita que las fotos se deformen */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 3px solid var(--dorado);
+}
+
+/* =========================
+ ITINERARIO
+========================= */
+.linea-tiempo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.paso {
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid var(--naranja);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.paso h3 {
+    color: var(--azul);
+    font-size: 26px;
+    margin: 0;
+    min-width: 110px;
+}
+
+.paso p {
+    font-size: 22px;
+    color: var(--texto);
+    margin: 0;
+}
+
+/* =========================
+ BOTÓN DE MÚSICA FLOTANTE
+========================= */
+.btn-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--dorado);
+    color: var(--azul);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.btn-flotante:hover {
+    background: var(--naranja);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* =========================
+ ICONOS ELEGANTES (FORZADOS)
+========================= */
+.icono-elegante {
+    width: 80px !important;
+    height: 80px !important;
+    min-height: 80px !important; /* Evita que el círculo se aplaste */
+    display: flex !important;
+    justify-content: center !important; /* Centra el icono horizontalmente */
+    align-items: center !important; /* Centra el icono verticalmente */
+    margin: 0 auto 30px auto !important; /* Da un súper espacio debajo del círculo */
+    border: 2px solid var(--dorado) !important;
+    border-radius: 50% !important;
+    font-size: 35px !important;
+    color: var(--naranja) !important;
+    background: transparent !important;
+}
+
+/* Candado para el icono Font Awesome */
+.icono-elegante i {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    line-height: 1 !important;
+}
+
+.icono-elegante:hover {
+    background: var(--dorado);
+    color: white;
+    transform: translateY(-5px); /* Un pequeño salto elegante al pasar el mouse */
+}
+
+/* =========================
+ SOLUCIÓN DE ESPACIADO (ESPACIO NEGATIVO)
+========================= */
+.evento {
+    min-height: 60vh;
+    padding: 80px 10%;
+    text-align: center;
+    background: var(--crema);
+    border-top: 2px solid var(--dorado);
+    /* Estas 3 líneas obligan a que todo se apile hacia abajo con espacio */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Esta es la magia: pone 20px de espacio exacto entre cada cosa */
+}
+
+/* =========================
+ BOTÓN DE WHATSAPP ANIMADO
+========================= */
+.btn-whatsapp {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #25D366; /* Verde oficial de WhatsApp */
+    color: white !important;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); /* Sombra verde brillante */
+    transition: 0.3s;
+    animation: latido 2s infinite; /* Esta es la magia que le da vida */
+}
+
+.btn-whatsapp i {
+    margin-right: 10px;
+    font-size: 26px;
+}
+
+/* Efecto de palpitación constante */
+@keyframes latido {
+    0% { 
+        transform: scale(1); 
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); 
+    }
+    50% { 
+        transform: scale(1.05); /* Crece un poquito */
+        box-shadow: 0 4px 25px rgba(37, 211, 102, 0.8); /* Brilla más */
+    }
+    100% { 
+        transform: scale(1); 
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); 
+    }
+}
+
+/* =========================
+ ADAPTACIÓN PARA CELULARES (RESPONSIVE) - VERSIÓN MEJORADA
+========================= */
+@media (max-width: 768px) {
+    /* Ajustes de tamaño de letra de la portada */
+    .portada h1 { font-size: 55px; margin: 15px 0; }
+    .portada h2 { font-size: 20px; letter-spacing: 4px; }
+    .nombre-periodico { font-size: 30px; letter-spacing: 5px; }
+    .fecha { font-size: 25px; margin: 10px 0; }
+    .titular { font-size: 20px; margin: 25px 0; }
+    .contenido img { width: 100%; }
+
+    /* --- Solución definitiva para desencimar en celulares --- */
+    
+    /* Agrega "aire" arriba y abajo de la portada entera */
+    .portada {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* OBLIGA a todos los elementos en la portada a tener espacio vertical */
+    .portada * {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Ajuste específico para la línea dorada */
+    .portada .linea {
+        margin-bottom: 25px !important;
+    }
+
+    /* Ajuste global de secciones en móvil: menos relleno lateral, más vertical */
+    .noticia, .evento {
+        padding: 50px 8% !important; /* Más espacio arriba y abajo en móvil */
+    }
+
+    /* Asegura que los iconos elegantes no se toquen con nada */
+    .icono-elegante {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        margin-bottom: 20px !important;
+    }
+}
